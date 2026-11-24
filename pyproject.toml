@@ -1,0 +1,30 @@
+[project]
+name = "smartagent"
+version = "0.1.0"
+description = "SmartAgent — Multi-tool LLM assistant using OpenAI function calling across calculator, web search, and SQLite database tools."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "ddgs>=6.0.0",
+    "openai>=1.55.0",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.1",
+    "rich>=13.9.0",
+    "streamlit>=1.40.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

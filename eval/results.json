@@ -1,0 +1,31 @@
+{
+  "mode_tested": "local",
+  "total_queries": 50,
+  "correct_routes": 50,
+  "overall_accuracy": 1.0,
+  "per_tool": {
+    "calculator": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 1.0
+    },
+    "database_query": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 1.0
+    },
+    "web_search": {
+      "total": 12,
+      "correct": 12,
+      "accuracy": 1.0
+    },
+    "none": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    }
+  },
+  "mismatches": [],
+  "retry_recovery_rate": 1.0,
+  "multi_turn_memory_passed": true
+}
